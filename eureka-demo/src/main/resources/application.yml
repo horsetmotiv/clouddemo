@@ -1,13 +1,13 @@
 server:
-  port: 20086
+  port: 20087
 spring:
   application:
     name: eureka-server
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://127.0.0.1:${server.port}/eureka
+      defaultZone: http://127.0.0.1:20086/eureka
 
